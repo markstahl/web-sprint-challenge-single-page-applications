@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom'
 export default function Form(props){
     const history = useHistory()
 
-    const{name, size, pepperoni, sausage, mushroom, onion, instructions, handleChange, handleSubmit, disabled } = props
+    const{name, size, pepperoni, sausage, mushroom, anchovy, instructions, handleChange, handleSubmit, disabled } = props
     
     return(
         <form onSubmit={handleSubmit}>
@@ -20,7 +20,7 @@ export default function Form(props){
                     <option value='S'>Small</option>
                     <option value='M'>Medium</option>
                     <option value='L'>Large</option>
-                    <option value='XL'>X-Large</option>
+                    <option value='XL'>Xtra-Large</option>
                 </select>
             </label>
             <div>
@@ -38,8 +38,8 @@ export default function Form(props){
                     <input id='mushroom' name='mushroom' type='checkbox'checked={mushroom} onChange={handleChange}/>
                 </label>
                 <label>
-                    Onion:
-                    <input id='onion' name='onion' type='checkbox'checked={onion} onChange={handleChange}/>
+                    Anchovy:
+                    <input id='anchovy' name='anchovy' type='checkbox'checked={anchovy} onChange={handleChange}/>
                 </label>
                 <label>
                     <br />
