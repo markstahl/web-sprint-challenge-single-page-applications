@@ -13,7 +13,7 @@ const initialForm = {
   size: '',
   pepperoni: false,
   sausage: false,
-  onion: false,
+  anchovy: false,
   mushroom: false,
   instructions: '',
 }
@@ -26,7 +26,7 @@ const formSchema = yup.object().shape({
   pepperoni: yup.string(),
   sausage: yup.string(),
   mushroom: yup.string(),
-  onion: yup.string(),
+  anchovy: yup.string(),
   instructions: yup.string(),
 })
 
@@ -81,9 +81,12 @@ const App = () => {
       <h1>Tony Bologne's Pizza Parlour</h1>
       </div>
     </>
+    <div className="error-message">
+    {errors.name.length > 0 && <p>{errors.name}</p>}
+    </div>
     <div>
       <Navigation />
-      {errors.name.length > 0 && <p>{errors.name}</p>}
+      
       <Switch>
         <Route path ='/pizza'>
           <Form 

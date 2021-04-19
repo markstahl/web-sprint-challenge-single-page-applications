@@ -14,8 +14,8 @@ export default function Completion (props) {
                     <p>Desired Toppings:</p>
                     {myPizza.pepperoni && <p>Pepperoni</p>}
                     {myPizza.sausage && <p>Sausage</p>}
-                    {myPizza.peppers && <p>Peppers</p>}
-                    {myPizza.onion && <p>Onion</p>}
+                    {myPizza.mushroom && <p>Mushroom</p>}
+                    {myPizza.anchovy && <p>Anhovy</p>}
                     <p> Special Instructions: {myPizza.specialrequest} </p>
                 </div>
             )

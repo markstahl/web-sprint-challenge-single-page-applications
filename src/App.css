@@ -132,3 +132,9 @@ button:disabled {
   text-shadow: 3px 3px #000000;
   border-bottom: 2px solid black
 }
+
+.error-message {
+  text-align: center;
+  color: red;
+  font-size: 30px;
+}
